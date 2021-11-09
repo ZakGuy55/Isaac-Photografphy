@@ -1,0 +1,193 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   font-family: Arial;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: black;
+}
+/* titulo */
+header h1{
+     color: white;
+     font-family:cursive;
+     font-size: 35px;
+     letter-spacing: 5px;
+}
+/* rectangulo titulo */
+nav{
+    background-color: red;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* sirve para esto  */
+nav ul{
+    display: flex;
+}
+/* separaciones */
+nav ul li{
+    border-right: solid 2px;
+    color: #ffffff;
+}
+/* botones */
+nav ul li a{
+  color: #ffffff;
+  font-size: 20px;
+  padding: 12px; 25px;
+  font-family:cursive;
+/*  lo reajusta  */
+  text-transform: uppercase;
+}
+
+/* cuadrito que se colorea */
+nav ul li a:hover{
+  background-color: black;
+  transition: all 1s;
+}
+
+main{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    height: 1720px;
+    align-items: right;
+}
+
+main h1{
+color: white;
+text-align: center;
+margin: 10px;
+    align-items: center;
+}
+main h1{
+color: white;
+text-align: center;
+margin: 10px;
+    align-items: center;
+}
+
+main h2{
+color: white;
+text-align: center;
+margin: 10px;
+    align-items: center;
+}
+
+main h3{
+color: white;
+text-align: center;
+margin: 10px;
+    align-items: center;
+}
+
+main h4{
+color: white;
+text-align: center;
+margin: 10px;
+    align-items: center;
+}
+
+main p{
+  color: red;
+  font-family: monospace;
+  text-align: center;
+  margin: 10px;
+  font-size: 50px;
+}
+
+main p2{
+color: red;
+text-align: center;
+margin-left: 10px;
+font-size: 50px;
+}
+
+main p3{
+color: red;
+text-align: center;
+margin-left: 10px;
+font-size: 50px;
+}
+
+main p4{
+color: red;
+text-align: center;
+margin-left: 10px;
+font-size: 20px;
+}
+
+footer{
+  background-color:  red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  align-items: center;
+}
+
+.drawer{
+	color: white;
+	float: left;
+	cursor: pointer;
+	display: none;
+	margin-left: 16px;
+	padding: 3px;
+	border: solid 1px;
+	border-radius: 1px;
+}
+
+#ckbox{
+	display: none;
+}
+
+@media(max-width: 1020px){
+	nav{
+		justify-content: flex-start;
+	}
+
+  .drawer{
+  		display: block;
+  	}
+
+  	#ckbox:checked ~ .menu-box{
+  		left: 0;
+  }
+
+  nav h1{
+		margin-left: 16px;
+	}
+
+  ul{
+		position: fixed;
+		width: 50%;
+		height: 100vh;
+		background-color: grey;
+		top: 10vh;
+		text-align: left;
+		transition: all 1s;
+		display: flex;
+		align-content: stretch;
+		flex-direction: column;
+		left: -100%;
+  }
+
+  nav ul li{
+		padding: 16px 0;
+		padding-left: 3px;
+		border-bottom: solid 1px rgba(201, 196, 196, 0.4);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image{
+		padding-top: 250px;
+	}
+
+}
